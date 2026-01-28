@@ -1,0 +1,21 @@
+﻿@model IEnumerable<EasyShop2.Models.Product>
+
+<h1>Продукти</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Име</th>
+            <th>Цена</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
